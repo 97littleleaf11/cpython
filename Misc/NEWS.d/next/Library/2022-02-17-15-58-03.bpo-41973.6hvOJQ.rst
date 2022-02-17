@@ -1,0 +1,1 @@
+TypedDict and NamedTuple are now of type functions instead of classes.

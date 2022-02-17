@@ -53,7 +53,7 @@ annotations. These include:
 * :pep:`586`: Literal Types
      *Introducing* :data:`Literal`
 * :pep:`589`: TypedDict: Type Hints for Dictionaries with a Fixed Set of Keys
-     *Introducing* :class:`TypedDict`
+     *Introducing* :func:`TypedDict`
 * :pep:`591`: Adding a final qualifier to typing
      *Introducing* :data:`Final` and the :func:`@final<final>` decorator
 * :pep:`593`: Flexible function and variable annotations
@@ -1370,7 +1370,7 @@ Other special directives
 
 These are not used in annotations. They are building blocks for declaring types.
 
-.. class:: NamedTuple
+.. function:: NamedTuple
 
    Typed version of :func:`collections.namedtuple`.
 
@@ -1444,7 +1444,7 @@ These are not used in annotations. They are building blocks for declaring types.
    .. versionchanged:: 3.10
       ``NewType`` is now a class rather than a function.
 
-.. class:: TypedDict(dict)
+.. function:: TypedDict(dict)
 
    Special construct to add type hints to a dictionary.
    At runtime it is a plain :class:`dict`.
@@ -2238,7 +2238,7 @@ Introspection helpers
 
 .. function:: is_typeddict(tp)
 
-   Check if a type is a :class:`TypedDict`.
+   Check if a type is a :func:`TypedDict`.
 
    For example::
 
